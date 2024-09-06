@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  lokatywebapi:
+    image: ${DOCKER_REGISTRY-}lokatywebapi
+    build:
+      context: .
+      dockerfile: LokatyWebApi\Dockerfile
